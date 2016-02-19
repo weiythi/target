@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bw</groupId>
+    <artifactId>target</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>target-adaptor</artifactId>
+  <packaging>war</packaging>
+  <name>target-adaptor Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.0.1</version>
+	</dependency>
+	<!-- 竞价模块 -->
+	<dependency>
+		<groupId>com.bw</groupId>
+		<artifactId>target-bidder</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.common</groupId>
+		<artifactId>framework-util</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>target-adaptor</finalName>
+  </build>
+</project>
