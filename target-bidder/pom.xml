@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bw</groupId>
+    <artifactId>target</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>target-bidder</artifactId>
+  <name>target-bidder</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <!-- google protobuf -->
+	<dependency>
+		<groupId>com.google.protobuf</groupId>
+		<artifactId>protobuf-java</artifactId>
+		<version>2.6.1</version>
+	</dependency>
+	<!-- 工具类集合 -->
+	<dependency>
+		<groupId>org.common</groupId>
+		<artifactId>framework-util</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+	<!-- 缓存操作集合 -->
+	<dependency>
+		<groupId>org.common</groupId>
+		<artifactId>framework-cache</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+  </dependencies>
+</project>

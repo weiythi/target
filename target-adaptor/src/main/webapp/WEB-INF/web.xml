@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <listener>
+  	<listener-class>com.bw.target.adaptor.listener.SystemContext</listener-class>
+  </listener>
+  <!-- servlet 配置 -->
+  <servlet>
+  	<servlet-name>tanx</servlet-name>
+  	<display-name>tanx</display-name>
+  	<description>tanx竞价接口</description>
+  	<servlet-class>com.bw.target.adaptor.controller.TanxController</servlet-class>
+  	<load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>bes</servlet-name>
+  	<display-name>bes</display-name>
+  	<description>bes竞价接口</description>
+  	<servlet-class>com.bw.target.adaptor.controller.BesController</servlet-class>
+  	<load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>hy</servlet-name>
+  	<display-name>hy</display-name>
+  	<description>海云竞价接口</description>
+  	<servlet-class>com.bw.target.adaptor.controller.HyController</servlet-class>
+  	<load-on-startup>0</load-on-startup>
+  </servlet>
+  <!-- serverlet mapping配置 -->
+  <servlet-mapping>
+  	<servlet-name>tanx</servlet-name>
+  	<url-pattern>/tanx</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>bes</servlet-name>
+  	<url-pattern>/bes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>hy</servlet-name>
+  	<url-pattern>/hy</url-pattern>
+  </servlet-mapping>
+</web-app>
